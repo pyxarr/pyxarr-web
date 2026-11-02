@@ -18,16 +18,18 @@ export default function OGImage() {
                     padding: "80px",
                 }}
             >
-                <div
-                    style={{
-                        fontSize: 28,
-                        fontWeight: 700,
-                        color: "white",
-                        letterSpacing: "0.1em",
-                        textTransform: "uppercase",
-                    }}
-                >
-                    Pyxarr©
+                <div style={{ display: "flex" }}>
+                    <div
+                        style={{
+                            fontSize: 28,
+                            fontWeight: 700,
+                            color: "white",
+                            letterSpacing: "0.1em",
+                            textTransform: "uppercase",
+                        }}
+                    >
+                        Pyxarr©
+                    </div>
                 </div>
 
                 <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
@@ -39,23 +41,26 @@ export default function OGImage() {
                             lineHeight: 0.85,
                             textTransform: "uppercase",
                             letterSpacing: "-0.04em",
+                            display: "flex",
+                            flexDirection: "column",
                         }}
                     >
-                        Digital
-                        <br />
+                        <span>Digital</span>
                         <span style={{ color: "#FB532C" }}>Studio.</span>
                     </div>
                 </div>
 
-                <div
-                    style={{
-                        fontSize: 18,
-                        color: "rgba(255,255,255,0.4)",
-                        letterSpacing: "0.15em",
-                        textTransform: "uppercase",
-                    }}
-                >
-                    Building products and experiences that work, ship, and last.
+                <div style={{ display: "flex" }}>
+                    <div
+                        style={{
+                            fontSize: 18,
+                            color: "rgba(255,255,255,0.4)",
+                            letterSpacing: "0.15em",
+                            textTransform: "uppercase",
+                        }}
+                    >
+                        Building products and experiences that work, ship, and last.
+                    </div>
                 </div>
             </div>
         ),

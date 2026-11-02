@@ -22,20 +22,24 @@ export default function OGImage({ params }: { params: { slug: string } }) {
                     padding: "80px",
                 }}
             >
-                <div
-                    style={{
-                        fontSize: 18,
-                        color: "rgba(255,255,255,0.4)",
-                        letterSpacing: "0.15em",
-                        textTransform: "uppercase",
-                    }}
-                >
-                    Pyxarr — Selected Work
+                <div style={{ display: "flex" }}>
+                    <div
+                        style={{
+                            fontSize: 18,
+                            color: "rgba(255,255,255,0.4)",
+                            letterSpacing: "0.15em",
+                            textTransform: "uppercase",
+                        }}
+                    >
+                        Pyxarr — Selected Work
+                    </div>
                 </div>
 
                 <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
                     <div
                         style={{
+                            display: "flex",
+                            flexDirection: "column",
                             fontSize: 96,
                             fontWeight: 900,
                             color: "white",
@@ -44,11 +48,14 @@ export default function OGImage({ params }: { params: { slug: string } }) {
                             letterSpacing: "-0.04em",
                         }}
                     >
-                        {name}
-                        <span style={{ color: "#FB532C" }}>.</span>
+                        <span>
+                            {name}
+                            <span style={{ color: "#FB532C" }}>.</span>
+                        </span>
                     </div>
                     <div
                         style={{
+                            display: "flex",
                             fontSize: 20,
                             color: "rgba(255,255,255,0.4)",
                             letterSpacing: "0.1em",
@@ -60,15 +67,17 @@ export default function OGImage({ params }: { params: { slug: string } }) {
                     </div>
                 </div>
 
-                <div
-                    style={{
-                        fontSize: 18,
-                        color: "rgba(255,255,255,0.4)",
-                        letterSpacing: "0.15em",
-                        textTransform: "uppercase",
-                    }}
-                >
-                    pyxarr.com
+                <div style={{ display: "flex" }}>
+                    <div
+                        style={{
+                            fontSize: 18,
+                            color: "rgba(255,255,255,0.4)",
+                            letterSpacing: "0.15em",
+                            textTransform: "uppercase",
+                        }}
+                    >
+                        pyxarr.com
+                    </div>
                 </div>
             </div>
         ),
