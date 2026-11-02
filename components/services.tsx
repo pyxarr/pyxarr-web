@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ScrollHeading from "@/components/scroll-heading";
 
 const services = [
     {
@@ -51,12 +52,17 @@ export default function Services() {
 
             {/* Section heading */}
             <div className="mb-10 md:mb-20">
-                <h2 className="text-[clamp(52px,8vw,108px)] font-black uppercase leading-[0.82] tracking-[-0.065em]">
-                    Studio
-                    <br />
-                    Services
-                    <span className="text-[#FB532C]">.</span>
-                </h2>
+                <ScrollHeading
+                    className="text-[clamp(52px,8vw,108px)] font-black uppercase leading-[0.82] tracking-[-0.065em]"
+                    lines={[
+                        { text: "Studio" },
+                        {
+                            text: "Services",
+                            suffix: ".",
+                            suffixClassName: "text-[#FB532C]",
+                        },
+                    ]}
+                />
             </div>
 
             {/* Services list */}

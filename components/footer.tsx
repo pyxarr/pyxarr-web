@@ -1,3 +1,5 @@
+import ScrollHeading from "@/components/scroll-heading";
+
 export default function Footer() {
     return (
         <footer
@@ -6,13 +8,14 @@ export default function Footer() {
         >
             {/* CTA */}
             <div className="flex flex-col items-center gap-10 text-center">
-                <h2 className="text-[clamp(52px,10vw,140px)] font-black uppercase leading-[0.82] tracking-[-0.065em]">
-                    Let&apos;s Build
-                    <br />
-                    Something That
-                    <br />
-                    <span className="text-[#FB532C]">Matters.</span>
-                </h2>
+                <ScrollHeading
+                    className="text-[clamp(52px,10vw,140px)] font-black uppercase leading-[0.82] tracking-[-0.065em]"
+                    lines={[
+                        { text: "Let's Build" },
+                        { text: "Something That" },
+                        { text: "Matters.", className: "text-[#FB532C]" },
+                    ]}
+                />
 
                 <a
                     href="mailto:hello@pyxarr.com"

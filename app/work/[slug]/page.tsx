@@ -11,6 +11,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { works } from "@/lib/works";
+import Reveal from "@/components/reveal";
 import Link from "next/link";
 
 interface PageProps {
@@ -35,9 +36,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
   return (
-    <div className="text-xs uppercase tracking-widest text-white/40">
+    <Reveal className="text-xs uppercase tracking-widest text-white/40">
       {children}
-    </div>
+    </Reveal>
   );
 }
 
@@ -51,7 +52,7 @@ function TwoColumnSection({
   return (
     <section className="bg-[#1A213E] grid grid-cols-1 md:grid-cols-[280px_1fr] gap-12 md:gap-24 py-16 px-6 md:px-[6.5vw] border-t border-white/10">
       <SectionLabel>{label}</SectionLabel>
-      <div>{children}</div>
+      <Reveal>{children}</Reveal>
     </section>
   );
 }
@@ -111,10 +112,14 @@ async function WorkPageContent({ params }: PageProps) {
           Back to Works
         </Link>
 
-        <h1 className="text-[clamp(52px,10vw,140px)] font-black uppercase leading-[0.82] tracking-[-0.065em] text-white mb-10 md:mb-16">
-          {work.name}
-        </h1>
-        <Skeleton className="aspect-16/6 w-full" />
+        <Reveal>
+          <h1 className="text-[clamp(52px,10vw,140px)] font-black uppercase leading-[0.82] tracking-[-0.065em] text-white mb-10 md:mb-16">
+            {work.name}
+          </h1>
+        </Reveal>
+        <Reveal delay={0.1}>
+          <Skeleton className="aspect-16/6 w-full" />
+        </Reveal>
       </section>
 
       {/* Project Overview */}
@@ -157,7 +162,9 @@ async function WorkPageContent({ params }: PageProps) {
 
       {/* Full width image placeholder */}
       <div className="bg-[#1A213E] px-6 md:px-[6.5vw] py-8">
-        <Skeleton className="aspect-16/7 w-full" />
+        <Reveal>
+          <Skeleton className="aspect-16/7 w-full" />
+        </Reveal>
       </div>
 
       {/* The Challenge */}
@@ -193,7 +200,9 @@ async function WorkPageContent({ params }: PageProps) {
       <section className="bg-[#1A213E] px-6 md:px-[6.5vw] py-16 border-t border-white/10">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {[1, 2, 3, 4].map((i) => (
-            <Skeleton key={i} className="aspect-square w-full" />
+            <Reveal key={i} delay={(i - 1) * 0.08}>
+              <Skeleton className="aspect-square w-full" />
+            </Reveal>
           ))}
         </div>
       </section>

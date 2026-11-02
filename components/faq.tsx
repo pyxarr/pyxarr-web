@@ -6,6 +6,7 @@ import {
     AccordionItem,
     AccordionTrigger,
 } from "@/components/ui/accordion";
+import ScrollHeading from "@/components/scroll-heading";
 
 const faqs = [
     {
@@ -47,11 +48,17 @@ export default function FAQ() {
             className="bg-[#1A213E] text-white px-6 md:px-[6.5vw] py-26"
         >
             {/* Heading */}
-            <h2 className="text-[clamp(52px,8vw,108px)] font-black uppercase leading-[0.82] tracking-[-0.065em] text-center mb-16 md:mb-24">
-                Questions &<br />
-                Answers
-                <span className="text-[#FB532C]">.</span>
-            </h2>
+            <ScrollHeading
+                className="text-[clamp(52px,8vw,108px)] font-black uppercase leading-[0.82] tracking-[-0.065em] text-center mb-16 md:mb-24"
+                lines={[
+                    { text: "Questions &" },
+                    {
+                        text: "Answers",
+                        suffix: ".",
+                        suffixClassName: "text-[#FB532C]",
+                    },
+                ]}
+            />
 
             {/* Accordion */}
             <Accordion

@@ -14,7 +14,7 @@ const interTight = Inter_Tight({
 export const metadata: Metadata = {
   metadataBase: new URL("https://pyxarr-web.vercel.app"),
   title: {
-    default: "Pyxarr — Digital Studio. We Build. We Ship.",
+    default: "Pyxarr | We Design. We Build. We Ship.",
     template: "%s | Pyxarr",
   },
   description: "Pyxarr is a digital studio that builds products and experiences that work, ship, and last.",
@@ -24,13 +24,13 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://pyxarr.com",
     siteName: "Pyxarr",
-    title: "Pyxarr — Digital Studio",
+    title: "Pyxarr | We Design. We Build. We Ship.",
     description: "We build products and digital experiences that work, ship, and last.",
     images: [{ url: "/opengraph-image.png", width: 1200, height: 630, alt: "Pyxarr" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Pyxarr — Digital Studio",
+    title: "Pyxarr | We Design. We Build. We Ship.",
     description: "We build products and digital experiences that work, ship, and last.",
     images: ["/opengraph-image"],
   },
