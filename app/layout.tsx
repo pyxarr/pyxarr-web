@@ -11,7 +11,7 @@ const interTight = Inter_Tight({
   subsets: ["latin"],
 });
 
-const description = "Pyxarr | We build products and digital experiences that work, ship, and last — for founders and brands worldwide.";
+const description = "Pyxarr | We build products and digital experiences that work, ship, and last. For founders and brands worldwide.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://pyxarr-web.vercel.app"),
