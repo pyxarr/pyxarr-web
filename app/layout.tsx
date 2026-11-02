@@ -17,12 +17,12 @@ export const metadata: Metadata = {
     default: "Pyxarr | We Design. We Build. We Ship.",
     template: "%s | Pyxarr",
   },
-  description: "Pyxarr is a digital studio that builds products and experiences that work, ship, and last.",
+  description: "We build products and experiences that work, ship, and last.",
   keywords: ["digital studio", "web design", "product development", "brand strategy", "Nigeria"],
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://pyxarr.com",
+    url: "https://pyxarr-web.vercel.app",
     siteName: "Pyxarr",
     title: "Pyxarr | We Design. We Build. We Ship.",
     description: "We build products and digital experiences that work, ship, and last.",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Pyxarr | We Design. We Build. We Ship.",
     description: "We build products and digital experiences that work, ship, and last.",
-    images: ["/opengraph-image"],
+    images: ["/opengraph-image.png"],
   },
   icons: {
     icon: [
@@ -62,7 +62,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
               url: "https://pyxarr-web.vercel.app",
               logo: "https://pyxarr-web.vercel.app/android-chrome-512x512.png",
               description:
-                "Pyxarr is a digital studio that builds products and experiences that work, ship, and last.",
+                "We build products and digital experiences that work, ship, and last.",
               email: "hello@pyxarr.com",
               foundingDate: "2024",
               areaServed: "Worldwide",
