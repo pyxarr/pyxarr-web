@@ -12,9 +12,9 @@ const interTight = Inter_Tight({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://pyxarr.com"),
+  metadataBase: new URL("https://pyxarr-web.vercel.app"),
   title: {
-    default: "Pyxarr",
+    default: "Pyxarr — Digital Studio. We Build. We Ship.",
     template: "%s | Pyxarr",
   },
   description: "Pyxarr is a digital studio that builds products and experiences that work, ship, and last.",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Pyxarr — Digital Studio",
     description: "We build products and digital experiences that work, ship, and last.",
-    images: ["/opengraph-image.png"],
+    images: ["/opengraph-image"],
   },
   icons: {
     icon: [
@@ -59,8 +59,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
               "@context": "https://schema.org",
               "@type": "Organization",
               name: "Pyxarr",
-              url: "https://pyxarr.com",
-              logo: "https://pyxarr.com/android-chrome-512x512.png",
+              url: "https://pyxarr-web.vercel.app",
+              logo: "https://pyxarr-web.vercel.app/android-chrome-512x512.png",
               description:
                 "Pyxarr is a digital studio that builds products and experiences that work, ship, and last.",
               email: "hello@pyxarr.com",
