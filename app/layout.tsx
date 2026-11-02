@@ -11,27 +11,29 @@ const interTight = Inter_Tight({
   subsets: ["latin"],
 });
 
+const description = "Pyxarr | We build products and digital experiences that work, ship, and last. We partner with founders, startups, and growing brands worldwide.";
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://pyxarr-web.vercel.app"),
   title: {
     default: "Pyxarr | We Design. We Build. We Ship.",
     template: "%s | Pyxarr",
   },
-  description: "We build products and experiences that work, ship, and last.",
-  keywords: ["digital studio", "web design", "product development", "brand strategy", "Nigeria"],
+  description,
+  keywords: ["digital studio", "web design", "web development", "product development", "brand strategy", "mobile app development", "startup studio", "MVP development"],
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://pyxarr-web.vercel.app",
     siteName: "Pyxarr",
     title: "Pyxarr | We Design. We Build. We Ship.",
-    description: "We build products and digital experiences that work, ship, and last.",
+    description,
     images: [{ url: "/opengraph-image.png", width: 1200, height: 630, alt: "Pyxarr" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Pyxarr | We Design. We Build. We Ship.",
-    description: "We build products and digital experiences that work, ship, and last.",
+    description,
     images: ["/opengraph-image.png"],
   },
   icons: {
@@ -61,8 +63,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
               name: "Pyxarr",
               url: "https://pyxarr-web.vercel.app",
               logo: "https://pyxarr-web.vercel.app/android-chrome-512x512.png",
-              description:
-                "We build products and digital experiences that work, ship, and last.",
+              description,
               email: "hello@pyxarr.com",
               foundingDate: "2024",
               areaServed: "Worldwide",
