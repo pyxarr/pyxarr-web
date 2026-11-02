@@ -1,16 +1,15 @@
-
 export default function Navbar() {
     return (
-        <nav className="right-0 z-50 flex items-center justify-between px-20 pt-8 bg-[#1A213E] tracking-tighter">
+        <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 md:px-20 pt-6 pb-4 md:pt-8 bg-[#1A213E] tracking-tighter">
 
             {/* Logo */}
-            <span className="relative inline-block text-white font-bold text-3xl tracking-tight uppercase leading-none">
+            <span className="relative inline-block text-white font-bold text-2xl md:text-3xl tracking-tight uppercase leading-none">
                 Pyxarr
-                <span className="absolute top-0.7 -right-4.5 text-[20px] leading-none text-[#FB532C]">©</span>
+                <span className="absolute top-0.2 -right-4 md:-right-4.5 text-base md:text-[20px] leading-none text-[#FB532C]">©</span>
             </span>
 
-            {/* Status indicator */}
-            <div className="flex items-center gap-2.5">
+            {/* Status indicator — hidden on mobile */}
+            <div className="hidden md:flex items-center gap-2.5">
                 <span className="relative flex h-2 w-2">
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75" />
                     <span className="relative inline-flex h-2 w-2 rounded-full bg-green-400" />
@@ -23,13 +22,13 @@ export default function Navbar() {
             {/* CTA */}
             <a
                 href="#contact"
-                className="flex items-center gap-2 text-[#FB532C] text-lg tracking-widest uppercase hover:text-white transition-colors duration-200"
+                className="flex items-center gap-2 text-[#FB532C] text-sm md:text-lg tracking-widest uppercase hover:text-white transition-colors duration-200"
             >
                 Contact Us
                 <svg
                     aria-hidden="true"
                     viewBox="0 0 24 24"
-                    className="h-4 w-8 text-current"
+                    className="h-3.5 md:h-4 w-6 md:w-8 text-current"
                     fill="none"
                     stroke="currentColor"
                     strokeWidth="1.8"

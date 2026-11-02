@@ -50,7 +50,7 @@ export default function Services() {
         >
 
             {/* Section heading */}
-            <div className="mb-16 md:mb-20">
+            <div className="mb-10 md:mb-20">
                 <h2 className="text-[clamp(52px,8vw,108px)] font-black uppercase leading-[0.82] tracking-[-0.065em]">
                     Studio
                     <br />

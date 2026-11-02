@@ -3,7 +3,7 @@ import { works } from "@/lib/works";
 
 export default function Works() {
   return (
-    <section id="works" className="bg-[#1A213E] px-6 md:px-[6.5vw] py-16 border-t border-white/10">
+    <section id="works" className="bg-[#1A213E] px-6 md:px-[6.5vw] py-16 pt-10 md:pt-16">
       {/* Section heading */}
       <div className="mb-16 md:mb-20">
         <h2 className="text-[clamp(52px,8vw,108px)] font-black uppercase leading-[0.82] tracking-[-0.065em] text-white">
