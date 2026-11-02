@@ -33,7 +33,7 @@ export default function ScrollHeading({
             {lines.map((line, lineIndex) => (
                 <span
                     key={lineIndex}
-                    className={`block overflow-hidden px-[0.1em] -mx-[0.1em] pb-[0.2em] -mb-[0.2em] ${line.className ?? ""}`}
+                    className={`block overflow-hidden px-[0.1em] mx-[-0.1em] pb-[0.2em] mb-[-0.2em] ${line.className ?? ""}`}
                 >
                     {line.text.split(" ").map((word, wordIndex, words) => {
                         const chars = [...word].map((char) => ({ char, className: "" }));
